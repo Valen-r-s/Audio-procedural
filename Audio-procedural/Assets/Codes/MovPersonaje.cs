@@ -4,30 +4,28 @@ using UnityEngine;
 
 public class MovPersonaje : MonoBehaviour
 {
-    public float Velocity = 100f; // Mouse look sensitivity
-    public float MoveSpeed = 5f; // Movement speed
-    float RotationX = 0;
-
-    public Transform Player; // Reference to the player object
+    public float Sensitivity = 2f; // Sensibilidad ajustable desde el Inspector
+    public float MoveSpeed = 5f; // Velocidad de movimiento
+    private float RotationX = 0;
+    public Transform Player; // Referencia al jugador
+    private CharacterController controller; // CharacterController para el movimiento
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        controller = Player.GetComponent<CharacterController>(); // Obtener el CharacterController
     }
 
     void Update()
     {
-        // Handle camera rotation
         HandleCameraRotation();
-
-        // Handle player movement
         HandlePlayerMovement();
     }
 
     void HandleCameraRotation()
     {
-        float MouseX = Input.GetAxis("Mouse X") * Velocity * Time.deltaTime;
-        float MouseY = Input.GetAxis("Mouse Y") * Velocity * Time.deltaTime;
+        float MouseX = Input.GetAxis("Mouse X") * Sensitivity;
+        float MouseY = Input.GetAxis("Mouse Y") * Sensitivity;
 
         RotationX -= MouseY;
         RotationX = Mathf.Clamp(RotationX, -90f, 90f);
@@ -38,14 +36,10 @@ public class MovPersonaje : MonoBehaviour
 
     void HandlePlayerMovement()
     {
-        // Get input for movement
-        float moveX = Input.GetAxis("Horizontal"); 
-        float moveZ = Input.GetAxis("Vertical");  
+        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
 
-        // Calculate movement direction relative to the player's rotation
         Vector3 moveDirection = (Player.right * moveX + Player.forward * moveZ).normalized;
-
-        // Move the player
-        Player.position += moveDirection * MoveSpeed * Time.deltaTime;
+        controller.Move(moveDirection * MoveSpeed * Time.deltaTime);
     }
 }
