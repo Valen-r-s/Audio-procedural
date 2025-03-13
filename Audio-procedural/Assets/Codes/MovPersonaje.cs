@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MovPersonaje : MonoBehaviour
 {
     public float Sensitivity = 2f; // Sensibilidad ajustable desde el Inspector
     public float MoveSpeed = 5f; // Velocidad de movimiento
+    public float gravity = -9.81f; // Gravedad
+
     private float RotationX = 0;
+    private Vector3 playerVelocity; // Velocidad vertical (para gravedad)
+    private bool isGrounded; // Verifica si el personaje está en el suelo
+
     public Transform Player; // Referencia al jugador
     private CharacterController controller; // CharacterController para el movimiento
 
@@ -18,8 +21,23 @@ public class MovPersonaje : MonoBehaviour
 
     void Update()
     {
+        // Verifica si el personaje está en el suelo
+        isGrounded = controller.isGrounded;
+
+        if (isGrounded && playerVelocity.y < 0)
+        {
+            playerVelocity.y = -2f;
+        }
+
+        // Maneja la rotación de la cámara
         HandleCameraRotation();
+
+        // Maneja el movimiento del jugador
         HandlePlayerMovement();
+
+        // Aplica gravedad
+        playerVelocity.y += gravity * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
 
     void HandleCameraRotation()
