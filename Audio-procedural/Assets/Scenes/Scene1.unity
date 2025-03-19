@@ -968,7 +968,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6163960310621833605, guid: 976ea8172b41a474180502a280af7075, type: 3}
   m_PrefabInstance: {fileID: 724362741662246740}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1811069447}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b77d9b21fdf254944bf28005187a2e0c, type: 3}
@@ -1632,6 +1632,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.4261384, y: 7.9629364, z: 1}
   m_Center: {x: -1.2054546, y: 3.4814682, z: 0}
+--- !u!1 &1000794932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+  m_PrefabInstance: {fileID: 1952922871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1000794934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000794932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1011609015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2163,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8572486695040362876, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+--- !u!114 &1185630758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185630750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1166980742
+      Data2: 1108643324
+      Data3: 14460313
+      Data4: 1458227326
+    Path: event:/Effects/puzzelSolution
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1185630759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185630750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1192784506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,6 +2649,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7240744651658926011, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+--- !u!114 &1476930122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476930114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1166980742
+      Data2: 1108643324
+      Data3: 14460313
+      Data4: 1458227326
+    Path: event:/Effects/puzzelSolution
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1476930123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476930114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1514935853 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 193251109365358965, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
@@ -2927,6 +3036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1782244681}
   - component: {fileID: 1782244680}
+  - component: {fileID: 1782244682}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3000,6 +3110,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1782244682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782244678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1806899844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1538785864532862619, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
@@ -3027,6 +3151,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1293478473244756759, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+--- !u!1 &1811069447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6886776128637605211, guid: 976ea8172b41a474180502a280af7075, type: 3}
+  m_PrefabInstance: {fileID: 724362741662246740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1811069450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811069447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1833778644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5425235081653445239, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
@@ -3369,6 +3512,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1106722238}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1000794934}
     - targetCorrespondingSourceObject: {fileID: 1600684655915182144, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1920434731}
@@ -3435,6 +3581,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 492515400890250953, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1476930118}
+    - targetCorrespondingSourceObject: {fileID: 492515400890250953, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1476930122}
+    - targetCorrespondingSourceObject: {fileID: 492515400890250953, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1476930123}
     - targetCorrespondingSourceObject: {fileID: -3861602417283417051, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1112059409}
@@ -3444,9 +3596,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7449522051883056045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1185630754}
+    - targetCorrespondingSourceObject: {fileID: -7449522051883056045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185630759}
+    - targetCorrespondingSourceObject: {fileID: -7449522051883056045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185630758}
     - targetCorrespondingSourceObject: {fileID: 5922291721938245, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2087503556}
+    - targetCorrespondingSourceObject: {fileID: 5922291721938245, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2087503561}
+    - targetCorrespondingSourceObject: {fileID: 5922291721938245, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2087503560}
     - targetCorrespondingSourceObject: {fileID: 70571451235780696, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1394631322}
@@ -3714,6 +3878,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7846426475089441348, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+--- !u!114 &2087503560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087503552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1166980742
+      Data2: 1108643324
+      Data3: 14460313
+      Data4: 1458227326
+    Path: event:/Effects/puzzelSolution
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2087503561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087503552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &2116827058
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,6 +4189,54 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2144965066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+  m_PrefabInstance: {fileID: 724362741662246740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2144965075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144965066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 546629761
+      Data2: 1104063647
+      Data3: 2099559816
+      Data4: -981052961
+    Path: event:/Effects/walking
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2144965078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144965066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059cbe60d4216d7478c397ee9579a3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &724362741662246740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4163,7 +4420,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 2144965075}
+    - targetCorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2144965078}
+    - targetCorrespondingSourceObject: {fileID: 6886776128637605211, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1811069450}
   m_SourcePrefab: {fileID: 100100000, guid: 976ea8172b41a474180502a280af7075, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
