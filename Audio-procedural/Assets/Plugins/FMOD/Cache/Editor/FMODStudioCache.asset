@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7353079583082099918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638780132562443907
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
 --- !u!114 &-5738088428518651600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,7 +39,7 @@ MonoBehaviour:
     Data3: 14460313
     Data4: 1458227326
   Banks:
-  - {fileID: -1789351855543099686}
+  - {fileID: 2444040335378368930}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -46,7 +66,7 @@ MonoBehaviour:
     Data3: 660225191
     Data4: 2109491250
   Banks:
-  - {fileID: -1789351855543099686}
+  - {fileID: 2444040335378368930}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -54,26 +74,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 31229
---- !u!114 &-1789351855543099686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/PoinOfView.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../UMNG/AudioProcedural/PointOfViewSoudns/Build/Desktop/PoinOfView.bank
-  Name: PoinOfView
-  StudioPath: bank:/PoinOfView
-  lastModified: 638779212478093230
-  FileSizes:
-  - Name: Desktop
-    Value: 520000
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,9 +87,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 689703890938907948}
-  - {fileID: 3618390949374595086}
-  - {fileID: -1789351855543099686}
+  - {fileID: 7790378372229251368}
+  - {fileID: -7353079583082099918}
+  - {fileID: 2444040335378368930}
   EditorEvents:
   - {fileID: -4272187043301566287}
   - {fileID: 5467085585965870080}
@@ -97,12 +97,12 @@ MonoBehaviour:
   - {fileID: 4279730751743318085}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3618390949374595086}
+  - {fileID: -7353079583082099918}
   StringsBanks:
-  - {fileID: 689703890938907948}
-  cacheTime: 638779212478093230
+  - {fileID: 7790378372229251368}
+  cacheTime: 638780132579080347
   cacheVersion: 131622
---- !u!114 &689703890938907948
+--- !u!114 &2444040335378368930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,35 +112,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/PoinOfView.bank
   m_EditorClassIdentifier: 
-  Path: ../../../UMNG/AudioProcedural/PointOfViewSoudns/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638779154184517335
+  Path: ../PointOfViewSoudns/Build/Desktop/PoinOfView.bank
+  Name: PoinOfView
+  StudioPath: bank:/PoinOfView
+  lastModified: 638780132579080347
   FileSizes:
   - Name: Desktop
-    Value: 976
-  Exists: 1
---- !u!114 &3618390949374595086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../UMNG/AudioProcedural/PointOfViewSoudns/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638779154184409639
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
+    Value: 520000
   Exists: 1
 --- !u!114 &4279730751743318085
 MonoBehaviour:
@@ -161,7 +141,7 @@ MonoBehaviour:
     Data3: 2099559816
     Data4: -981052961
   Banks:
-  - {fileID: -1789351855543099686}
+  - {fileID: 2444040335378368930}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -188,7 +168,7 @@ MonoBehaviour:
     Data3: 921235378
     Data4: -16573786
   Banks:
-  - {fileID: -1789351855543099686}
+  - {fileID: 2444040335378368930}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -196,3 +176,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 145
+--- !u!114 &7790378372229251368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638780132562473064
+  FileSizes:
+  - Name: Desktop
+    Value: 976
+  Exists: 1
