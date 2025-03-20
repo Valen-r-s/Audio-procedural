@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638780210713237284
+  lastModified: 638780221245619943
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -34,10 +34,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/penumbra
   Guid:
-    Data1: 2051250025
-    Data2: 1187125121
-    Data3: 54263210
-    Data4: 1874001702
+    Data1: -1530507333
+    Data2: 1111281716
+    Data3: 1285256343
+    Data4: -1250578726
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 1
@@ -115,10 +115,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/heavy-mechancial-door
   Guid:
-    Data1: -1184658251
-    Data2: 1247331579
-    Data3: -831747455
-    Data4: 1323882923
+    Data1: 1110720703
+    Data2: 1126816485
+    Data3: -1904727676
+    Data4: -1315444325
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 0
@@ -142,10 +142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Interfaz/click2
   Guid:
-    Data1: 1824884746
-    Data2: 1234093753
-    Data3: -939240574
-    Data4: -1952602848
+    Data1: -1318117801
+    Data2: 1300432860
+    Data3: 1374944689
+    Data4: -1934798242
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 0
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1001
+--- !u!114 &-1808489891984633012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/high-pitched-conversation
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/high-pitched-conversation
+  Guid:
+    Data1: 2016375232
+    Data2: 1325046380
+    Data3: 1286506429
+    Data4: 390990084
+  Banks:
+  - {fileID: 2444040335378368930}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2246
 --- !u!114 &-1583860704927763200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,10 +196,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/time-passing
   Guid:
-    Data1: -1955785782
-    Data2: 1077173511
-    Data3: -1754210115
-    Data4: 633536194
+    Data1: 1955301157
+    Data2: 1099476101
+    Data3: -1914977640
+    Data4: 1778289327
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 0
@@ -196,10 +223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/time-slow
   Guid:
-    Data1: -845613633
-    Data2: 1209215255
-    Data3: -1422042198
-    Data4: -1712781070
+    Data1: 850396288
+    Data2: 1077064408
+    Data3: 1505118909
+    Data4: 2077778651
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 0
@@ -233,17 +260,17 @@ MonoBehaviour:
   - {fileID: -2375262830124140342}
   - {fileID: -6644885871003598014}
   - {fileID: 8929566775480878521}
-  - {fileID: 4672696824510689455}
   - {fileID: 9203113262665915315}
   - {fileID: -3793984489253145544}
   - {fileID: -225333064430317162}
   - {fileID: -1583860704927763200}
+  - {fileID: -1808489891984633012}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7353079583082099918}
   StringsBanks:
   - {fileID: 7790378372229251368}
-  cacheTime: 638780210714695993
+  cacheTime: 638780221260323533
   cacheVersion: 131622
 --- !u!114 &2444040335378368930
 MonoBehaviour:
@@ -260,7 +287,7 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/PoinOfView.bank
   Name: PoinOfView
   StudioPath: bank:/PoinOfView
-  lastModified: 638780210714695993
+  lastModified: 638780221260323533
   FileSizes:
   - Name: Desktop
     Value: 993888
@@ -292,33 +319,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8097
---- !u!114 &4672696824510689455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue/high-pitched
-  m_EditorClassIdentifier: 
-  Path: event:/Dialogue/high-pitched
-  Guid:
-    Data1: -1024657266
-    Data2: 1168966499
-    Data3: 830015130
-    Data4: 362497369
-  Banks:
-  - {fileID: 2444040335378368930}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2246
 --- !u!114 &5467085585965870080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,10 +361,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638780210713316038
+  lastModified: 638780221245695565
   FileSizes:
   - Name: Desktop
-    Value: 1344
+    Value: 1358
   Exists: 1
 --- !u!114 &8929566775480878521
 MonoBehaviour:
@@ -380,10 +380,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Dialogue/blahBlahBlah
   Guid:
-    Data1: 123244149
-    Data2: 1162800878
-    Data3: 889742464
-    Data4: -123942477
+    Data1: -125365806
+    Data2: 1162988969
+    Data3: 2097100418
+    Data4: -153991120
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 0
@@ -407,10 +407,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Interfaz/click3
   Guid:
-    Data1: -529157211
-    Data2: 1262128757
-    Data3: -701359455
-    Data4: 1854803063
+    Data1: 2113859499
+    Data2: 1269871903
+    Data3: -2018944354
+    Data4: -1291657383
   Banks:
   - {fileID: 2444040335378368930}
   IsStream: 0
