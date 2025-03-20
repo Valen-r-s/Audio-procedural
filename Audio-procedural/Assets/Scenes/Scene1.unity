@@ -1758,6 +1758,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3238760072142016214, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+--- !u!114 &1040310047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040310037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1166980742
+      Data2: 1108643324
+      Data3: 14460313
+      Data4: 1458227326
+    Path: event:/Effects/puzzelSolution
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1040310048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040310037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1106722237
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,6 +3196,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1293478473244756759, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+--- !u!114 &1806899851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806899844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
+--- !u!114 &1806899854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806899844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1166980742
+      Data2: 1108643324
+      Data3: 14460313
+      Data4: 1458227326
+    Path: event:/Effects/puzzelSolution
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1811069447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6886776128637605211, guid: 976ea8172b41a474180502a280af7075, type: 3}
@@ -3548,9 +3638,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1538785864532862619, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1806899848}
+    - targetCorrespondingSourceObject: {fileID: 1538785864532862619, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1806899851}
+    - targetCorrespondingSourceObject: {fileID: 1538785864532862619, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1806899854}
     - targetCorrespondingSourceObject: {fileID: -641031018727182580, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1040310041}
+    - targetCorrespondingSourceObject: {fileID: -641031018727182580, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1040310048}
+    - targetCorrespondingSourceObject: {fileID: -641031018727182580, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1040310047}
     - targetCorrespondingSourceObject: {fileID: 5425235081653445239, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1833778648}

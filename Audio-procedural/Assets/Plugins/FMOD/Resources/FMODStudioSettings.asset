@@ -307,8 +307,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../UMNG/AudioProcedural/PointOfViewSoudns/PointOfViewSoudns.fspro
-  sourceBankPath: ../../../UMNG/AudioProcedural/PointOfViewSoudns/Build
+  sourceProjectPath: ../PointOfViewSoudns/PointOfViewSoudns.fspro
+  sourceBankPath: ../PointOfViewSoudns/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
