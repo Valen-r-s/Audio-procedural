@@ -1468,8 +1468,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: {fileID: 541038388}
-  objectToActivate: {fileID: 1106722237}
-  objectToDesactivate: {fileID: 1112059405}
+  objectsToActivate:
+  - {fileID: 1106722237}
+  objectsToDeactivate:
+  - {fileID: 1112059405}
+  - {fileID: 541038387}
   raycastDistance: 15
   playerCamera: {fileID: 442755312}
 --- !u!1 &887336524 stripped
@@ -4341,7 +4344,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

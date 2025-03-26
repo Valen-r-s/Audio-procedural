@@ -1,18 +1,21 @@
 using UnityEngine;
 using TMPro; // Necesario para TextMeshPro
+using System.Collections.Generic;
 
 public class InteractiveObject : MonoBehaviour
 {
     public TextMeshProUGUI interactionText; // Texto en pantalla
-    public GameObject objectToActivate; // Objeto que se activará al presionar "E"
-    public GameObject objectToDesactivate; // Objeto que se desactivará
+    public List<GameObject> objectsToActivate = new List<GameObject>(); // Lista de objetos a activar
+    public List<GameObject> objectsToDeactivate = new List<GameObject>(); // Lista de objetos a desactivar
     public float raycastDistance = 5f; // Distancia máxima del Raycast
     public Camera playerCamera; // Cámara del jugador (asignar en el Inspector)
+    private BoxCollider boxCollider; // Referencia al BoxCollider del objeto
 
     private bool isPlayerInTrigger = false; // Si el jugador está en la zona
 
     private void Start()
     {
+        boxCollider = GetComponent<BoxCollider>(); // Obtener el BoxCollider
         if (interactionText != null)
         {
             interactionText.gameObject.SetActive(false); // Ocultar texto al inicio
@@ -23,7 +26,7 @@ public class InteractiveObject : MonoBehaviour
     {
         if (isPlayerInTrigger && Input.GetKeyDown(KeyCode.E) && IsPlayerLookingAtMe())
         {
-            ActivateObject();
+            ActivateObjects();
         }
     }
 
@@ -47,11 +50,24 @@ public class InteractiveObject : MonoBehaviour
         return false;
     }
 
-    private void ActivateObject()
+    private void ActivateObjects()
     {
-        Debug.Log("Interacción exitosa: Activando objeto.");
-        if (objectToActivate != null) objectToActivate.SetActive(true);
-        if (objectToDesactivate != null) objectToDesactivate.SetActive(false);
+        Debug.Log("Interacción exitosa: Activando y desactivando objetos.");
+
+        foreach (GameObject obj in objectsToActivate)
+        {
+            if (obj != null) obj.SetActive(true);
+        }
+
+        foreach (GameObject obj in objectsToDeactivate)
+        {
+            if (obj != null) obj.SetActive(false);
+        }
+
+        if (boxCollider != null)
+        {
+            boxCollider.enabled = false; // Desactivar el BoxCollider después de la interacción
+        }
     }
 
     private void OnTriggerEnter(Collider other)
