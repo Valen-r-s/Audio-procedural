@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2542f628-c06e-45b4-a93c-0a947a177849}">
+		<property name="assetPath">
+			<value>efectos/Engine start.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.9996145124716551</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8f0dd642-6bff-4a92-86b1-2c55e516b203}</destination>
+		</relationship>
+	</object>
+</objects>

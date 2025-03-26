@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e0841ce3-fd3c-43d9-a517-2cdeaa7acb07}">
+		<property name="assetPath">
+			<value>efectos/Electric buzz.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.084395833333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8f0dd642-6bff-4a92-86b1-2c55e516b203}</destination>
+		</relationship>
+	</object>
+</objects>
