@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{c7dbaa31-1ee9-4c2f-b702-dc720e92f4df}">
+		<property name="name">
+			<value>LLUVIA Domo</value>
+		</property>
+		<relationship name="folder">
+			<destination>{da400aad-5427-4373-bee0-11d97072ac13}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{41467ec6-fd7b-4aa2-a8ec-406bdf968a33}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{41467ec6-fd7b-4aa2-a8ec-406bdf968a33}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
