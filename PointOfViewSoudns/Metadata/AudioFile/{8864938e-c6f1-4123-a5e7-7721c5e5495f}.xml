@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8864938e-c6f1-4123-a5e7-7721c5e5495f}">
+		<property name="assetPath">
+			<value>efectos/paso 11.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.87621315192743765</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8f0dd642-6bff-4a92-86b1-2c55e516b203}</destination>
+		</relationship>
+	</object>
+</objects>
