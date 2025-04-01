@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{e80e3803-7188-4820-9335-0907bb77aa32}">
 		<property name="assetPath">
 			<value>Ambientes/void.wav</value>

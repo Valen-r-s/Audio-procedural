@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{c18577a8-f5cd-4f85-9cb8-babb44d0c7a8}">
 		<property name="assetPath">
 			<value>Dialogos/high-pitched-conversation.mp3</value>

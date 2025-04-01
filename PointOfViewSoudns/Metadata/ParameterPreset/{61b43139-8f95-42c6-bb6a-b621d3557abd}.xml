@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{61b43139-8f95-42c6-bb6a-b621d3557abd}">
+		<property name="name">
+			<value>pasos reverb</value>
+		</property>
+		<relationship name="folder">
+			<destination>{da400aad-5427-4373-bee0-11d97072ac13}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c42fa2d4-9f15-4f93-91eb-77c2c7a7a73b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c42fa2d4-9f15-4f93-91eb-77c2c7a7a73b}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

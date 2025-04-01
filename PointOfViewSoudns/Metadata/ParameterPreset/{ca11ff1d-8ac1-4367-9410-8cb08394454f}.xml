@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{ca11ff1d-8ac1-4367-9410-8cb08394454f}">
 		<property name="name">
-			<value>Distance</value>
+			<value>Fabric distance</value>
 		</property>
 		<relationship name="folder">
 			<destination>{da400aad-5427-4373-bee0-11d97072ac13}</destination>

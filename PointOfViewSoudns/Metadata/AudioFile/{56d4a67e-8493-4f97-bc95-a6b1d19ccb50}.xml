@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{56d4a67e-8493-4f97-bc95-a6b1d19ccb50}">
 		<property name="assetPath">
 			<value>efectos/heavy-mechancial-door.mp3</value>

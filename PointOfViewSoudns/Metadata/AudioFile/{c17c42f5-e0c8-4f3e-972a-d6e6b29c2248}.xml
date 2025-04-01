@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{c17c42f5-e0c8-4f3e-972a-d6e6b29c2248}">
 		<property name="assetPath">
 			<value>Ambientes/surreal and distorted ambient.mp3</value>

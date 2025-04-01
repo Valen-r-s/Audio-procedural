@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{e0841ce3-fd3c-43d9-a517-2cdeaa7acb07}">
 		<property name="assetPath">
 			<value>efectos/Electric buzz.wav</value>

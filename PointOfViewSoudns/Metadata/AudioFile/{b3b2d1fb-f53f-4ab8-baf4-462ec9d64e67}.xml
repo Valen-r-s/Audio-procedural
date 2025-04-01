@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{b3b2d1fb-f53f-4ab8-baf4-462ec9d64e67}">
 		<property name="assetPath">
 			<value>Ambientes/Rising tone.wav</value>

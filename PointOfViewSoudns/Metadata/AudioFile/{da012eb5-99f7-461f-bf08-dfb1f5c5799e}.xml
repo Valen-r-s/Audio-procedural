@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{da012eb5-99f7-461f-bf08-dfb1f5c5799e}">
 		<property name="assetPath">
 			<value>Ambientes/Sonidos de la naturaleza.mp3</value>

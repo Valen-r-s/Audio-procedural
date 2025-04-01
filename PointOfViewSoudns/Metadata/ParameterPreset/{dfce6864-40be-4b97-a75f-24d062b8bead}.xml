@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{dfce6864-40be-4b97-a75f-24d062b8bead}">
+		<property name="name">
+			<value>Dripping distance </value>
+		</property>
+		<relationship name="folder">
+			<destination>{da400aad-5427-4373-bee0-11d97072ac13}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e1c6a8f6-20fc-4b46-9397-8cfd3d3b8c18}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e1c6a8f6-20fc-4b46-9397-8cfd3d3b8c18}">
+		<property name="parameterType">
+			<value>3</value>
+		</property>
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
