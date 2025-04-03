@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{db833bad-faf0-463f-9ff6-a03c0341c70b}">
 		<property name="name">
 			<value>transiciones menú</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{bbdc3ccd-e428-4d3f-9761-883348834e8a}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{9ef5d797-d510-4bfd-b2dc-17b28ca88c60}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{6b8ecb53-ec86-4cda-9e0b-7c29b03af451}">

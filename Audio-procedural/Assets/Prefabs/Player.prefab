@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6695836013140063004}
   - component: {fileID: 5626588978235451006}
   - component: {fileID: 6630415666556599067}
+  - component: {fileID: 4938865313720862182}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -155,6 +156,26 @@ MonoBehaviour:
   playerCamera: {fileID: 2582347985941606819}
   interactableObjects: []
   spawnableObjects: []
+--- !u!114 &4938865313720862182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266244378608711215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059cbe60d4216d7478c397ee9579a3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepEvent:
+    Guid:
+      Data1: 1739262785
+      Data2: 1123248294
+      Data3: -301001808
+      Data4: 1941349973
+    Path: event:/Effects/pasos
+  reverbTransitionSpeed: 0.5
 --- !u!1 &6886776128637605211
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,8 +186,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6387671783981294872}
   - component: {fileID: 2582347985941606819}
-  - component: {fileID: 4621324585473906240}
   - component: {fileID: 6163960310621833605}
+  - component: {fileID: 8386524954881769259}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -240,14 +261,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &4621324585473906240
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886776128637605211}
-  m_Enabled: 1
 --- !u!114 &6163960310621833605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +277,17 @@ MonoBehaviour:
   MoveSpeed: 30
   gravity: -300
   Player: {fileID: 5765418867092637818}
+--- !u!114 &8386524954881769259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886776128637605211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
