@@ -45,6 +45,7 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{b9d6123b-1954-4604-ae50-3de1d1d8d639}">
+<<<<<<< Updated upstream
 		<relationship name="automationTracks">
 			<destination>{99e1620a-b024-4103-a1ea-8dbf32ccdb8b}</destination>
 			<destination>{da6f91db-4292-4ceb-be17-792cad0ea009}</destination>
@@ -54,6 +55,13 @@
 			<destination>{fbd5ed81-5ab8-4f65-aff8-08b825b978e8}</destination>
 			<destination>{a42235a3-7de0-46fc-982a-7a3c117733da}</destination>
 			<destination>{80445a66-e660-4da5-823a-2ca3b41791f9}</destination>
+=======
+		<relationship name="modules">
+			<destination>{cb5bc5ed-9115-480a-b56d-3d0f77f253fa}</destination>
+			<destination>{ee62f2ac-23a8-4415-976f-0f064654f316}</destination>
+			<destination>{34b7c19d-da4c-4198-a3f8-5ade05581027}</destination>
+			<destination>{54b0a411-015b-40d7-951c-e738bcd7639c}</destination>
+>>>>>>> Stashed changes
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d4c6312e-d727-42ff-b10e-dacf2ddcd42e}</destination>
@@ -76,6 +84,13 @@
 	<object class="GroupTrack" id="{2dbafd7d-0643-4a1f-8764-c54fb3d076fe}">
 		<relationship name="modules">
 			<destination>{5a6911fa-7698-4878-a5e8-2f2422f82259}</destination>
+<<<<<<< Updated upstream
+=======
+			<destination>{c51ac9c3-2d10-43f2-99f8-2bcd62078dc5}</destination>
+			<destination>{b4280d3d-a3cf-486e-a1aa-220e6c2c9ac5}</destination>
+			<destination>{7aa9819c-87ba-41ed-81c0-9a375d9448b5}</destination>
+			<destination>{004c218c-c7d4-4df2-a44b-5393d5fe6b9d}</destination>
+>>>>>>> Stashed changes
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{571acd31-1a26-4070-866d-94865ed3836e}</destination>
@@ -146,6 +161,19 @@
 			<destination>{be962bcf-7438-4094-9509-5d0e0ac697e3}</destination>
 		</relationship>
 	</object>
+	<object class="TransitionSourceSound" id="{34b7c19d-da4c-4198-a3f8-5ade05581027}">
+		<property name="length">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="TransitionDestinationSound" id="{54b0a411-015b-40d7-951c-e738bcd7639c}">
+		<property name="start">
+			<value>0.050000000000000044</value>
+		</property>
+		<property name="length">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{85c0bf91-a8e2-4164-b52d-dcb0c80439e4}">
 		<relationship name="effects">
 			<destination>{e060182e-1a27-4be1-854d-58ad2022ec19}</destination>
@@ -170,6 +198,35 @@
 			<destination>{4ed543b9-1ec3-4c24-9d8a-ce063bf27365}</destination>
 		</relationship>
 	</object>
+<<<<<<< Updated upstream
+=======
+	<object class="TransitionSourceSound" id="{c51ac9c3-2d10-43f2-99f8-2bcd62078dc5}">
+		<property name="length">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="TransitionDestinationSound" id="{b4280d3d-a3cf-486e-a1aa-220e6c2c9ac5}">
+		<property name="start">
+			<value>0.10000000000000009</value>
+		</property>
+		<property name="length">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="TransitionSourceSound" id="{7aa9819c-87ba-41ed-81c0-9a375d9448b5}">
+		<property name="length">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="TransitionDestinationSound" id="{004c218c-c7d4-4df2-a44b-5393d5fe6b9d}">
+		<property name="start">
+			<value>0.050000000000000044</value>
+		</property>
+		<property name="length">
+			<value>0</value>
+		</property>
+	</object>
+>>>>>>> Stashed changes
 	<object class="EventMixerGroup" id="{571acd31-1a26-4070-866d-94865ed3836e}">
 		<property name="volume">
 			<value>-6</value>
@@ -199,6 +256,9 @@
 		</relationship>
 		<relationship name="markerTrack">
 			<destination>{36458d1a-3596-448f-a32d-5dae52e84b9e}</destination>
+		</relationship>
+		<relationship name="transitionTimeline">
+			<destination>{54104423-0122-4e41-938c-4446d31bc671}</destination>
 		</relationship>
 	</object>
 	<object class="TransitionMarker" id="{2d0844dd-cbc3-4f27-9dd2-eaeb251e18c0}">
@@ -284,10 +344,27 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{34ef74fa-7400-4d58-b6e2-5e57ae7b3a02}" />
+<<<<<<< Updated upstream
 	<object class="MixerBusFader" id="{bcabfc87-6c21-441a-9380-8c1d19ac320c}" />
 	<object class="SFXReverbEffect" id="{0aafd25d-eb13-4efb-bd9f-2aef42270a24}">
 		<property name="earlyDelay">
 			<value>7</value>
+=======
+	<object class="TransitionTimeline" id="{54104423-0122-4e41-938c-4446d31bc671}">
+		<property name="length">
+			<value>0.050000000000000003</value>
+		</property>
+		<relationship name="modules">
+			<destination>{7aa9819c-87ba-41ed-81c0-9a375d9448b5}</destination>
+			<destination>{004c218c-c7d4-4df2-a44b-5393d5fe6b9d}</destination>
+			<destination>{34b7c19d-da4c-4198-a3f8-5ade05581027}</destination>
+			<destination>{54b0a411-015b-40d7-951c-e738bcd7639c}</destination>
+		</relationship>
+	</object>
+	<object class="TransitionTimeline" id="{c76ca18e-daad-4bb1-831f-baae36185c0a}">
+		<property name="length">
+			<value>0.10000000000000009</value>
+>>>>>>> Stashed changes
 		</property>
 		<property name="lateDelay">
 			<value>11</value>
