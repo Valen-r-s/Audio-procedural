@@ -44,11 +44,16 @@ public class InteractiveObject : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, raycastDistance))
         {
-            return hit.collider.gameObject == gameObject; // Detecta si está mirando este objeto
+            // Verifica si el objeto impactado es este y si tiene un MeshCollider
+            if (hit.collider.gameObject == gameObject && hit.collider is MeshCollider)
+            {
+                return true;
+            }
         }
 
         return false;
     }
+
 
     private void ActivateObjects()
     {

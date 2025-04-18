@@ -415,7 +415,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - PoinOfView
+  - Bank A
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

@@ -59,6 +59,9 @@
 	<object class="EventAutomatableProperties" id="{d7cc37bd-8348-4076-817d-cd95a65afa3c}" />
 	<object class="MarkerTrack" id="{5141239a-b15c-451b-82ee-715e38e9088f}" />
 	<object class="GroupTrack" id="{a7fab54c-a68a-47a4-9cf0-f8122198af08}">
+		<relationship name="automationTracks">
+			<destination>{f9384323-3a32-4c83-a6ac-0632a0704728}</destination>
+		</relationship>
 		<relationship name="modules">
 			<destination>{6d153813-ea50-428f-80d7-2dfeac171401}</destination>
 		</relationship>
@@ -88,10 +91,18 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8abed5f6-513e-41ab-a130-4a14de3458c8}" />
+	<object class="AutomationTrack" id="{f9384323-3a32-4c83-a6ac-0632a0704728}">
+		<relationship name="automator">
+			<destination>{b6963e19-f3dc-440a-a880-2d4db2cffb78}</destination>
+		</relationship>
+	</object>
 	<object class="MultiSound" id="{6d153813-ea50-428f-80d7-2dfeac171401}">
 		<property name="length">
 			<value>0.76000000000000001</value>
 		</property>
+		<relationship name="automators">
+			<destination>{b6963e19-f3dc-440a-a880-2d4db2cffb78}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{65875aec-3e75-4f48-bea1-12780a536863}</destination>
 			<destination>{c92c2f4a-c1ae-4f7c-93d1-4f7ec4cec1a9}</destination>
@@ -119,7 +130,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{52db371b-fb51-4004-a5a9-808015b74fbd}" />
 	<object class="MixerBusFader" id="{9dac5d8e-5bd7-40ce-b8af-3f1c037762ee}" />
+	<object class="Automator" id="{b6963e19-f3dc-440a-a880-2d4db2cffb78}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>pitch</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{65875aec-3e75-4f48-bea1-12780a536863}">
+		<property name="startOffset">
+			<value>10</value>
+		</property>
 		<property name="pitch">
 			<value>6</value>
 		</property>
@@ -128,6 +147,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{c92c2f4a-c1ae-4f7c-93d1-4f7ec4cec1a9}">
+		<property name="startOffset">
+			<value>10.5</value>
+		</property>
 		<property name="pitch">
 			<value>1.80000007</value>
 		</property>
@@ -136,6 +158,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{23de42de-9dec-486d-bade-9130460c5af9}">
+		<property name="startOffset">
+			<value>11</value>
+		</property>
 		<property name="pitch">
 			<value>4.5</value>
 		</property>
