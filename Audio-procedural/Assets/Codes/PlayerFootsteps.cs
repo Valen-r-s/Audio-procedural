@@ -12,7 +12,7 @@ public class FootstepSound : MonoBehaviour
 
     [Header("Raycast Settings")]
     public float rayLength = 1.5f;
-    public LayerMask materialLayer; // ← Aquí defines la capa de materiales en el Inspector
+    public LayerMask materialLayer; 
 
     [Header("Reverb Settings")]
     public float reverbTransitionTime = 0.2f;
