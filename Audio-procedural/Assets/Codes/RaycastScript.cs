@@ -18,6 +18,8 @@ public class RaycastInteractor : MonoBehaviour
     private bool hasCardEquipped = false;
     private int equippedCardIndex = -1;
     private bool isAiming = false;
+    private List<bool> unlockedCards = new List<bool> { true, false, false, false };
+
 
     public GameObject CardCont;
     private Animator cardAnimator;
@@ -68,16 +70,25 @@ public class RaycastInteractor : MonoBehaviour
 
     void EquipCard(int cardIndex)
     {
+        if (!unlockedCards[cardIndex]) return;
+
         if (equippedCardIndex != cardIndex)
         {
-            isAiming = false; // Cancelar apuntado
+            isAiming = false;
             isChangingCard = true;
             equippedCardIndex = cardIndex;
-            cardAnimator.SetInteger("EstadoCarta", 1); // 1 = Cambiar carta
+            cardAnimator.SetInteger("EstadoCarta", 1);
             Debug.Log("Tarjeta equipada: " + (cardIndex + 1));
         }
     }
-
+    public void UnlockCard(int cardIndex)
+    {
+        if (cardIndex >= 0 && cardIndex < unlockedCards.Count)
+        {
+            unlockedCards[cardIndex] = true;
+            Debug.Log("Tarjeta desbloqueada: " + (cardIndex + 1));
+        }
+    }
 
     void ShootRay()
     {
@@ -117,10 +128,11 @@ public class RaycastInteractor : MonoBehaviour
     public void ActivarEquipamientoDeTarjetas()
     {
         hasCardEquipped = true;
-        equippedCardIndex = 0;
+        equippedCardIndex = 0; // Solo la primera tarjeta
         CardCont.SetActive(true);
-        Debug.Log("Ahora puedes equipar y usar tarjetas.");
+        Debug.Log("Tarjeta 1 desbloqueada.");
     }
+
 
     // Estos métodos se llaman desde eventos en la animación
     public void SetIsAiming(bool value)
