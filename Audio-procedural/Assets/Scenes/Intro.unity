@@ -1498,7 +1498,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1556,11 +1556,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1817883850
-      Data2: 1266737906
-      Data3: 921235378
-      Data4: -16573786
-    Path: event:/Interfaz/click
+      Data1: -612156499
+      Data2: 1178598128
+      Data3: 1017181855
+      Data4: 197607683
+    Path: "event:/Interfaz/transiciones men\xFA"
   Event: 
   EventPlayTrigger: 19
   EventStopTrigger: 0
