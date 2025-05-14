@@ -126,6 +126,7 @@ MonoBehaviour:
     Data4: 262708095
   Banks:
   - {fileID: -932354503394887063}
+  - {fileID: 6746351626847939249}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -232,6 +233,7 @@ MonoBehaviour:
     Data4: -638475357
   Banks:
   - {fileID: -932354503394887063}
+  - {fileID: 6746351626847939249}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -255,10 +257,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638810334618967120
+  lastModified: 638827388670473361
   FileSizes:
   - Name: Desktop
-    Value: 1882
+    Value: 1938
   Exists: 1
 --- !u!114 &-932354503394887063
 MonoBehaviour:
@@ -275,10 +277,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638810348710883098
+  lastModified: 638827388667319552
   FileSizes:
   - Name: Desktop
-    Value: 9408000
+    Value: 9740576
   Exists: 1
 --- !u!114 &-242185297823382136
 MonoBehaviour:
@@ -360,13 +362,14 @@ MonoBehaviour:
   - {fileID: -1972935198908397509}
   - {fileID: 8743154912871749109}
   - {fileID: -8130423044651973993}
+  - {fileID: 5568684905410944829}
   EditorParameters:
   - {fileID: 2569652665604006365}
   MasterBanks:
   - {fileID: 6746351626847939249}
   StringsBanks:
   - {fileID: -1321606380086727399}
-  cacheTime: 638810348710883098
+  cacheTime: 638827388670473361
   cacheVersion: 131846
 --- !u!114 &177103268343015971
 MonoBehaviour:
@@ -495,6 +498,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5568684905410944829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/MaquinaEscribir
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/MaquinaEscribir
+  Guid:
+    Data1: -398903780
+    Data2: 1170499872
+    Data3: -1045351492
+    Data4: 1560125870
+  Banks:
+  - {fileID: -932354503394887063}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &5915322162266242439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,10 +567,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638810334618766976
+  lastModified: 638827388670412600
   FileSizes:
   - Name: Desktop
-    Value: 142784
+    Value: 1988640
   Exists: 1
 --- !u!114 &6956537735639008371
 MonoBehaviour:

@@ -4690,14 +4690,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1786164230
-      Data2: 1153686717
-      Data3: 731248529
-      Data4: -100817883
-    Path: event:/Dialogue/Dialogos 1
+      Data1: -398903780
+      Data2: 1170499872
+      Data3: -1045351492
+      Data4: 1560125870
+    Path: event:/Dialogue/MaquinaEscribir
   Event: 
   EventPlayTrigger: 11
-  EventStopTrigger: 0
+  EventStopTrigger: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
