@@ -3073,8 +3073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfed6da8d8498c4fbb07431b04c0697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeCode: {fileID: 0}
-  Ligth: {fileID: 0}
+  FadeCode: {fileID: 1907221131}
+  Ligth: {fileID: 736872990}
 --- !u!95 &1273282146
 Animator:
   serializedVersion: 5
@@ -4113,7 +4113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4096401518725302396, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_TagString
-      value: Concreto
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: -4096401518725302396, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4124,8 +4124,16 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: -2931570883023359752, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2931570883023359752, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2931570883023359752, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: -2022910241510029116, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_IsActive
@@ -4137,7 +4145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1177084380221417112, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_TagString
-      value: Concreto
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: -1177084380221417112, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4209,7 +4217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3674457431620878966, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_TagString
-      value: Concreto
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 3674457431620878966, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4221,7 +4229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4805140017608511954, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_TagString
-      value: Concreto
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 4805140017608511954, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4240,8 +4248,16 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6374587266262785952, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374587266262785952, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374587266262785952, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 7453612177472324375, guid: 8d13cd22da86c9b46a4c4a345ae1afaa, type: 3}
       propertyPath: m_Layer

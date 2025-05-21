@@ -8,6 +8,7 @@ TagManager:
   - Interactable
   - Concreto
   - Madera
+  - Metal
   layers:
   - Default
   - TransparentFX

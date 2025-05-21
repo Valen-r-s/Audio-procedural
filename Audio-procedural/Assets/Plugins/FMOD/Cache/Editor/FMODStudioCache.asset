@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Pasos/Pasos
+  m_Name: parameter:/pasos/Pasos
   m_EditorClassIdentifier: 
   Name: Pasos
   StudioPath: 
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: 1096177283
     Data4: -804435363
   Banks:
-  - {fileID: -6066254351819109312}
+  - {fileID: 2821445839706973871}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
     Data3: -245060735
     Data4: -1030323399
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -82,50 +82,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 152000
---- !u!114 &-8008755546505384031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: E:/Documentos/BackupDiscoduro/ING MULTIMEDIA/10 semestre/audio Pro/Audio-procedural/PointOfViewSoudns/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638833710080756019
-  FileSizes:
-  - Name: Desktop
-    Value: 2104
-  Exists: 1
---- !u!114 &-7836906199504526950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Pasos/pasos reverb
-  m_EditorClassIdentifier: 
-  Name: pasos reverb
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1743753792
-    data2: 3174662461
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-7702792910480405446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +106,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-6066254351819109312
+--- !u!114 &-6014691917478260980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,15 +116,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Bank A.bank
   m_EditorClassIdentifier: 
-  Path: E:/Documentos/BackupDiscoduro/ING MULTIMEDIA/10 semestre/audio Pro/Audio-procedural/PointOfViewSoudns/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638833710080746033
+  Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 638834386568668860
   FileSizes:
   - Name: Desktop
-    Value: 142304
+    Value: 10337312
+  Exists: 1
+--- !u!114 &-4935995470316317252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverb pasos
+  m_EditorClassIdentifier: 
+  Name: Reverb pasos
+  StudioPath: parameter:/Reverb pasos
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1201644040
+    data2: 3978424814
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-4451203877711146405
 MonoBehaviour:
@@ -180,22 +160,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/Pasos
+  m_Name: event:/Effects/pasos
   m_EditorClassIdentifier: 
-  Path: event:/Effects/Pasos
+  Path: event:/Effects/pasos
   Guid:
     Data1: 1344192464
     Data2: 1209703472
     Data3: 1015164074
     Data4: 1587171328
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -8308888321185561189}
-  - {fileID: -7836906199504526950}
+  - {fileID: 2390354096103589485}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -242,7 +222,7 @@ MonoBehaviour:
     Data3: -291830632
     Data4: 131749084
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -269,7 +249,7 @@ MonoBehaviour:
     Data3: 1515627190
     Data4: -2033777524
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -296,7 +276,7 @@ MonoBehaviour:
     Data3: -1207591499
     Data4: -638475357
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -324,7 +304,7 @@ MonoBehaviour:
     Data3: 1017181855
     Data4: 197607683
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -369,9 +349,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -8008755546505384031}
-  - {fileID: 7289476738219457812}
-  - {fileID: -6066254351819109312}
+  - {fileID: 7162602974493901334}
+  - {fileID: -6014691917478260980}
+  - {fileID: 2821445839706973871}
   EditorEvents:
   - {fileID: 3774812333661393012}
   - {fileID: -8052497629847096577}
@@ -386,44 +366,17 @@ MonoBehaviour:
   - {fileID: 8743154912871749109}
   - {fileID: -8130423044651973993}
   - {fileID: 5568684905410944829}
-  - {fileID: 47680752812307768}
   - {fileID: 5879876189320986519}
   - {fileID: 8050305972037331721}
   - {fileID: 4202336121032895498}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: -4935995470316317252}
   MasterBanks:
-  - {fileID: -6066254351819109312}
+  - {fileID: 2821445839706973871}
   StringsBanks:
-  - {fileID: -8008755546505384031}
-  cacheTime: 638833802660993866
+  - {fileID: 7162602974493901334}
+  cacheTime: 638834386568668860
   cacheVersion: 131846
---- !u!114 &47680752812307768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/PasosMetalicos
-  m_EditorClassIdentifier: 
-  Path: event:/Effects/PasosMetalicos
-  Guid:
-    Data1: -1880505575
-    Data2: 1274077789
-    Data3: -309122380
-    Data4: 1486160003
-  Banks:
-  - {fileID: 7289476738219457812}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 620
 --- !u!114 &177103268343015971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +420,7 @@ MonoBehaviour:
     Data3: -317885773
     Data4: 1239005308
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -476,6 +429,50 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 91115
+--- !u!114 &2390354096103589485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pasos/pitch
+  m_EditorClassIdentifier: 
+  Name: pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2642720066
+    data2: 519294312
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2821445839706973871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638834384900380846
+  FileSizes:
+  - Name: Desktop
+    Value: 142912
+  Exists: 1
 --- !u!114 &3774812333661393012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +492,7 @@ MonoBehaviour:
     Data3: 731248529
     Data4: -100817883
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -522,7 +519,7 @@ MonoBehaviour:
     Data3: 453782664
     Data4: 2005251817
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -573,7 +570,7 @@ MonoBehaviour:
     Data3: -1045351492
     Data4: 1560125870
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -600,7 +597,7 @@ MonoBehaviour:
     Data3: 839303304
     Data4: 1724800434
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -627,7 +624,7 @@ MonoBehaviour:
     Data3: -1994377537
     Data4: 412786896
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -654,7 +651,7 @@ MonoBehaviour:
     Data3: -971214950
     Data4: 1356340846
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -664,7 +661,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 178062
---- !u!114 &7289476738219457812
+--- !u!114 &7162602974493901334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -674,16 +671,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank A.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: E:/Documentos/BackupDiscoduro/ING MULTIMEDIA/10 semestre/audio Pro/Audio-procedural/PointOfViewSoudns/Build/Desktop/Bank
-    A.bank
-  Name: Bank A
-  StudioPath: bank:/Bank A
-  lastModified: 638833802660993866
+  Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638834384900410950
   FileSizes:
   - Name: Desktop
-    Value: 10338656
+    Value: 2130
   Exists: 1
 --- !u!114 &8050305972037331721
 MonoBehaviour:
@@ -704,7 +700,7 @@ MonoBehaviour:
     Data3: -575625545
     Data4: -1490485733
   Banks:
-  - {fileID: 7289476738219457812}
+  - {fileID: -6014691917478260980}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -731,7 +727,7 @@ MonoBehaviour:
     Data3: 181052309
     Data4: 818893500
   Banks:
-  - {fileID: -6066254351819109312}
+  - {fileID: 2821445839706973871}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
