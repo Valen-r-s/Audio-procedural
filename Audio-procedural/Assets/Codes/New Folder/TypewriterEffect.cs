@@ -16,6 +16,7 @@ public class TypewriterEffect : MonoBehaviour
 
     void Start()
     {
+        PauseMenu.CanPaused = false;
         if (panel != null && panel.activeSelf)
         {
             // Desactivar movimiento de cámara
@@ -45,5 +46,6 @@ public class TypewriterEffect : MonoBehaviour
 
         // Ocultar el panel
         panel.SetActive(false);
+        PauseMenu.CanPaused = true;
     }
 }

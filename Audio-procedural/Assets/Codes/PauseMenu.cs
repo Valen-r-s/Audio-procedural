@@ -4,13 +4,15 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuPanel;
 
-    public MonoBehaviour playerCameraController; 
+    public MonoBehaviour playerCameraController;
 
-    private bool isPaused = false;
+    public static bool isPaused { get; private set; } = false;
+    public static bool CanPaused = false;
+
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && CanPaused == true)
         {
             if (isPaused)
             {
@@ -25,6 +27,7 @@ public class PauseMenu : MonoBehaviour
 
     void PauseGame()
     {
+        Time.timeScale = 0;
         pauseMenuPanel.SetActive(true);
 
         if (playerCameraController != null)
@@ -40,6 +43,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        Time.timeScale = 1;
         pauseMenuPanel.SetActive(false);
 
         if (playerCameraController != null)

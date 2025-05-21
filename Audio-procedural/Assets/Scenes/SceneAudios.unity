@@ -6561,19 +6561,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4938865313720862182, guid: 976ea8172b41a474180502a280af7075, type: 3}
       propertyPath: footstepEvent.Guid.Data1
-      value: -1690342920
+      value: 1344192464
       objectReference: {fileID: 0}
     - target: {fileID: 4938865313720862182, guid: 976ea8172b41a474180502a280af7075, type: 3}
       propertyPath: footstepEvent.Guid.Data2
-      value: 1191273257
+      value: 1209703472
       objectReference: {fileID: 0}
     - target: {fileID: 4938865313720862182, guid: 976ea8172b41a474180502a280af7075, type: 3}
       propertyPath: footstepEvent.Guid.Data3
-      value: 567334029
+      value: 1015164074
       objectReference: {fileID: 0}
     - target: {fileID: 4938865313720862182, guid: 976ea8172b41a474180502a280af7075, type: 3}
       propertyPath: footstepEvent.Guid.Data4
-      value: 262708095
+      value: 1587171328
       objectReference: {fileID: 0}
     - target: {fileID: 4988509325432676796, guid: 976ea8172b41a474180502a280af7075, type: 3}
       propertyPath: spawnableObjects.Array.data[0]

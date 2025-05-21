@@ -7,6 +7,7 @@ public class SceneChanger : MonoBehaviour
     {
         if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene(sceneIndex);
         }
         else

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5572853300694206124
 Transform:
   m_ObjectHideFlags: 0
@@ -250,10 +250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepEvent:
     Guid:
-      Data1: -1690342920
-      Data2: 1191273257
-      Data3: 567334029
-      Data4: 262708095
+      Data1: 1344192464
+      Data2: 1209703472
+      Data3: 1015164074
+      Data4: 1587171328
     Path: event:/Effects/Pasos
   rayLength: 1.5
   materialLayer:
