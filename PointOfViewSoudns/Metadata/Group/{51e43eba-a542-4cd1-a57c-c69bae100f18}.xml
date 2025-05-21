@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{51e43eba-a542-4cd1-a57c-c69bae100f18}">
+		<property name="name">
+			<value>Pasos reverb</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{2654731e-d738-4d48-8261-8a0c72471c8a}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{03e52376-bb46-4e1f-87c1-5151b480036b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{5d103414-84f2-4f7f-8bc1-e1381a78a1aa}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{2654731e-d738-4d48-8261-8a0c72471c8a}">
+		<relationship name="effects">
+			<destination>{2d0cf5e7-e164-4c03-90c9-b8fc814a34b3}</destination>
+			<destination>{4115fa19-e541-4b1b-9cd6-a35a7d3f3955}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{03e52376-bb46-4e1f-87c1-5151b480036b}" />
+	<object class="SFXReverbEffect" id="{2d0cf5e7-e164-4c03-90c9-b8fc814a34b3}">
+		<relationship name="automators">
+			<destination>{4b55b740-42bb-44e7-9bcb-8a6178d7e172}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{4115fa19-e541-4b1b-9cd6-a35a7d3f3955}" />
+	<object class="Automator" id="{4b55b740-42bb-44e7-9bcb-8a6178d7e172}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>decayTime</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{2ee7718c-9f8e-401a-88dc-8a049888bee1}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{2ee7718c-9f8e-401a-88dc-8a049888bee1}">
+		<relationship name="parameter">
+			<destination>{cec8a206-6a1a-41a5-9e81-d683df9c53f2}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{9ce5c0c0-3fc9-4f97-b046-e5e49ecdb24d}</destination>
+			<destination>{5c97f6cb-c008-4193-a767-02e0aeeac8ff}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{9ce5c0c0-3fc9-4f97-b046-e5e49ecdb24d}">
+		<property name="position">
+			<value>0.029661016949152543</value>
+		</property>
+		<property name="value">
+			<value>100</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{5c97f6cb-c008-4193-a767-02e0aeeac8ff}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>13500</value>
+		</property>
+	</object>
+</objects>
