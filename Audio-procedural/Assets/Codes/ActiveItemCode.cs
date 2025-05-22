@@ -69,6 +69,8 @@ public class InteractiveObject : MonoBehaviour
             if (obj != null) obj.SetActive(false);
         }
 
+        GetComponent<PlayFmodOnInteract>()?.PlaySound();
+
         if (boxCollider != null)
         {
             boxCollider.enabled = false; // Desactivar el BoxCollider después de la interacción

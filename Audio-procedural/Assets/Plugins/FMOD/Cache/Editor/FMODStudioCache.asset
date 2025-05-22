@@ -106,6 +106,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6300875712111022900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/CambioFoto
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/CambioFoto
+  Guid:
+    Data1: -1224633005
+    Data2: 1284669019
+    Data3: -575625545
+    Data4: -1490485733
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &-6014691917478260980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,12 +148,12 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638834386568668860
+  lastModified: 638834647989800162
   FileSizes:
   - Name: Desktop
-    Value: 10337312
+    Value: 10337216
   Exists: 1
---- !u!114 &-4935995470316317252
+--- !u!114 &-5097195371283361391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,21 +162,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Reverb pasos
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/InventoryGrab
   m_EditorClassIdentifier: 
-  Name: Reverb pasos
-  StudioPath: parameter:/Reverb pasos
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1201644040
-    data2: 3978424814
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
+  Path: event:/Effects/InventoryGrab
+  Guid:
+    Data1: 2140963514
+    Data2: 1083799997
+    Data3: 453782664
+    Data4: 2005251817
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 440
 --- !u!114 &-4451203877711146405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +205,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -8308888321185561189}
-  - {fileID: 2390354096103589485}
+  - {fileID: 3373602895899778246}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -203,6 +233,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-2631031366930027011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Electricidad
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Electricidad
+  Guid:
+    Data1: -1822824421
+    Data2: 1098598618
+    Data3: 839303304
+    Data4: 1724800434
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &-1972935198908397509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +342,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 160591
+--- !u!114 &-265005336043751301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverb pasos
+  m_EditorClassIdentifier: 
+  Name: Reverb pasos
+  StudioPath: parameter:/Reverb pasos
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1201644040
+    data2: 3978424814
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-242185297823382136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,16 +447,16 @@ MonoBehaviour:
   - {fileID: 8743154912871749109}
   - {fileID: -8130423044651973993}
   - {fileID: 5568684905410944829}
-  - {fileID: 5879876189320986519}
-  - {fileID: 8050305972037331721}
-  - {fileID: 4202336121032895498}
+  - {fileID: -2631031366930027011}
+  - {fileID: -6300875712111022900}
+  - {fileID: -5097195371283361391}
   EditorParameters:
-  - {fileID: -4935995470316317252}
+  - {fileID: -265005336043751301}
   MasterBanks:
   - {fileID: 2821445839706973871}
   StringsBanks:
   - {fileID: 7162602974493901334}
-  cacheTime: 638834386568668860
+  cacheTime: 638834647989800162
   cacheVersion: 131846
 --- !u!114 &177103268343015971
 MonoBehaviour:
@@ -429,7 +510,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 91115
---- !u!114 &2390354096103589485
+--- !u!114 &2821445839706973871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638834615633601005
+  FileSizes:
+  - Name: Desktop
+    Value: 142944
+  Exists: 1
+--- !u!114 &3373602895899778246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,26 +553,6 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &2821445839706973871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638834384900380846
-  FileSizes:
-  - Name: Desktop
-    Value: 142912
   Exists: 1
 --- !u!114 &3774812333661393012
 MonoBehaviour:
@@ -500,33 +581,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4500
---- !u!114 &4202336121032895498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/InventoryGrab
-  m_EditorClassIdentifier: 
-  Path: event:/Effects/InventoryGrab
-  Guid:
-    Data1: 2140963514
-    Data2: 1083799997
-    Data3: 453782664
-    Data4: 2005251817
-  Banks:
-  - {fileID: -6014691917478260980}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 440
 --- !u!114 &5052763962316512819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,33 +632,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &5879876189320986519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambiente/Electricidad
-  m_EditorClassIdentifier: 
-  Path: event:/Ambiente/Electricidad
-  Guid:
-    Data1: -1822824421
-    Data2: 1098598618
-    Data3: 839303304
-    Data4: 1724800434
-  Banks:
-  - {fileID: -6014691917478260980}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 12000
 --- !u!114 &5915322162266242439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,38 +703,11 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638834384900410950
+  lastModified: 638834615633621568
   FileSizes:
   - Name: Desktop
     Value: 2130
   Exists: 1
---- !u!114 &8050305972037331721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/CambioFoto
-  m_EditorClassIdentifier: 
-  Path: event:/Effects/CambioFoto
-  Guid:
-    Data1: -1224633005
-    Data2: 1284669019
-    Data3: -575625545
-    Data4: -1490485733
-  Banks:
-  - {fileID: -6014691917478260980}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
 --- !u!114 &8743154912871749109
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2471,6 +2471,49 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059730016, y: 0.020878103, z: 0.018503523}
   m_Center: {x: -0.0015836701, y: -0.028144911, z: -0.009102578}
+--- !u!114 &796698039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796698027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40e7e0eae143e24f814fb674eb441dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &796698040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796698027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2140963514
+      Data2: 1083799997
+      Data3: 453782664
+      Data4: 2005251817
+    Path: event:/Effects/InventoryGrab
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &805629097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,6 +3303,8 @@ GameObject:
   - component: {fileID: 1020782819}
   - component: {fileID: 1020782818}
   - component: {fileID: 1020782817}
+  - component: {fileID: 1020782823}
+  - component: {fileID: 1020782820}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -3354,6 +3399,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020782815}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1020782820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020782815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2140963514
+      Data2: 1083799997
+      Data3: 453782664
+      Data4: 2005251817
+    Path: event:/Effects/InventoryGrab
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1020782823
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020782815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: -10, z: 20}
+  m_Center: {x: 0, y: 5, z: 5}
 --- !u!1 &1022380255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8259841504063060146, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
@@ -6051,14 +6148,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1786164230
-      Data2: 1153686717
-      Data3: 731248529
-      Data4: -100817883
-    Path: event:/Dialogue/Dialogos 1
+      Data1: -398903780
+      Data2: 1170499872
+      Data3: -1045351492
+      Data4: 1560125870
+    Path: event:/Dialogue/MaquinaEscribir
   Event: 
   EventPlayTrigger: 11
-  EventStopTrigger: 0
+  EventStopTrigger: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -7118,6 +7215,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2167720548346594379, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 796698033}
+    - targetCorrespondingSourceObject: {fileID: -2167720548346594379, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 796698040}
+    - targetCorrespondingSourceObject: {fileID: -2167720548346594379, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 796698039}
     - targetCorrespondingSourceObject: {fileID: -8956957918385441498, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 536554654}
