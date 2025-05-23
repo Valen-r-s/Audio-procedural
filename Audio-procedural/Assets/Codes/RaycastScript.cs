@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using FMODUnity;
 
 public class RaycastInteractor : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class RaycastInteractor : MonoBehaviour
     public List<GameObject> spawnableObjects = new List<GameObject>();
     public List<int> requiredCardIndex = new List<int>();
 
+    public StudioEventEmitter cardChangeEmitter;
+
     private bool canCastRay = false;
     private bool hasCardEquipped = false;
     private int equippedCardIndex = -1;
@@ -23,7 +26,7 @@ public class RaycastInteractor : MonoBehaviour
 
     public GameObject CardCont;
     private Animator cardAnimator;
-    private bool isChangingCard = false; // Evita apuntar mientras se cambia de carta
+    private bool isChangingCard = false;
     void Start()
     {
         cardAnimator = CardCont.GetComponent<Animator>();
@@ -78,9 +81,16 @@ public class RaycastInteractor : MonoBehaviour
             isChangingCard = true;
             equippedCardIndex = cardIndex;
             cardAnimator.SetInteger("EstadoCarta", 1);
+
+            if (cardChangeEmitter != null)
+            {
+                cardChangeEmitter.Play(); // 🔊 Sonido de cambio de carta
+            }
+
             Debug.Log("Tarjeta equipada: " + (cardIndex + 1));
         }
     }
+
     public void UnlockCard(int cardIndex)
     {
         if (cardIndex >= 0 && cardIndex < unlockedCards.Count)

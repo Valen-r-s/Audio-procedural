@@ -1110,6 +1110,9 @@
 		<property name="threshold">
 			<value>-28.5</value>
 		</property>
+		<property name="gain">
+			<value>-11</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{79ae01b7-e299-45ea-af80-44f851fd3117}" />
 	<object class="AutomationPoint" id="{ede8f63f-c7c7-49fd-aeda-c1ccb6f504c6}">

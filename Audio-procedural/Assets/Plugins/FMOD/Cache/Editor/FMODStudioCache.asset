@@ -148,10 +148,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638834647989800162
+  lastModified: 638836029028072302
   FileSizes:
   - Name: Desktop
-    Value: 10337216
+    Value: 10336640
   Exists: 1
 --- !u!114 &-5097195371283361391
 MonoBehaviour:
@@ -287,33 +287,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 15378
---- !u!114 &-1780235938440514906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/emergencia
-  m_EditorClassIdentifier: 
-  Path: event:/Effects/emergencia
-  Guid:
-    Data1: 741295077
-    Data2: 1085546028
-    Data3: 1515627190
-    Data4: -2033777524
-  Banks:
-  - {fileID: -6014691917478260980}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5690
 --- !u!114 &-1510511566038878209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +414,6 @@ MonoBehaviour:
   - {fileID: -242185297823382136}
   - {fileID: 1579499631954667969}
   - {fileID: 6956537735639008371}
-  - {fileID: -1780235938440514906}
   - {fileID: -4451203877711146405}
   - {fileID: -1972935198908397509}
   - {fileID: 8743154912871749109}
@@ -450,14 +422,43 @@ MonoBehaviour:
   - {fileID: -2631031366930027011}
   - {fileID: -6300875712111022900}
   - {fileID: -5097195371283361391}
+  - {fileID: 121470061182374311}
+  - {fileID: 1264734324145149508}
   EditorParameters:
   - {fileID: -265005336043751301}
   MasterBanks:
   - {fileID: 2821445839706973871}
   StringsBanks:
   - {fileID: 7162602974493901334}
-  cacheTime: 638834647989800162
+  cacheTime: 638836029028072302
   cacheVersion: 131846
+--- !u!114 &121470061182374311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Conection
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Conection
+  Guid:
+    Data1: 1983354316
+    Data2: 1286638560
+    Data3: 730455227
+    Data4: -172223522
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &177103268343015971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,6 +483,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1264734324145149508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/electric
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/electric
+  Guid:
+    Data1: -433439599
+    Data2: 1254533549
+    Data3: -1768633454
+    Data4: -940877953
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &1579499631954667969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,7 +553,7 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638834615633601005
+  lastModified: 638836011222752614
   FileSizes:
   - Name: Desktop
     Value: 142944
@@ -703,10 +731,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638834615633621568
+  lastModified: 638836011222764112
   FileSizes:
   - Name: Desktop
-    Value: 2130
+    Value: 2180
   Exists: 1
 --- !u!114 &8743154912871749109
 MonoBehaviour:

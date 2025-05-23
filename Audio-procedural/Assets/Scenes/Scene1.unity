@@ -774,8 +774,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 343212203}
-  - component: {fileID: 343212202}
-  - component: {fileID: 343212201}
   m_Layer: 0
   m_Name: Tajerta 4
   m_TagString: Untagged
@@ -783,42 +781,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &343212201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343212200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02bbaae0ffe54114391c63e52b07b298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Slot: {fileID: 651044657}
-  cardIndex: 3
-  raycastInteractor: {fileID: 2144965075}
---- !u!65 &343212202
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343212200}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.157139, y: 6.5183144, z: 10.228882}
-  m_Center: {x: 4.459177, y: 1.2225361, z: 1.1820374}
 --- !u!4 &343212203
 Transform:
   m_ObjectHideFlags: 0
@@ -1445,6 +1407,10 @@ GameObject:
   - component: {fileID: 538831930}
   - component: {fileID: 538831929}
   - component: {fileID: 538831928}
+  - component: {fileID: 538831934}
+  - component: {fileID: 538831933}
+  - component: {fileID: 538831932}
+  - component: {fileID: 538831931}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1539,6 +1505,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538831926}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &538831931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538831926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40e7e0eae143e24f814fb674eb441dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &538831932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538831926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2140963514
+      Data2: 1083799997
+      Data3: 453782664
+      Data4: 2005251817
+    Path: event:/Effects/InventoryGrab
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &538831933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538831926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bbaae0ffe54114391c63e52b07b298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slot: {fileID: 651044657}
+  cardIndex: 3
+  raycastInteractor: {fileID: 2144965075}
+  playerCamera: {fileID: 442755312}
+  raycastDistance: 30
+  interactionText: {fileID: 541038388}
+--- !u!65 &538831934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538831926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25, y: 15, z: 60}
+  m_Center: {x: 1, y: 6.7, z: -12}
 --- !u!1 &541038387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,6 +2710,10 @@ GameObject:
   - component: {fileID: 863225525}
   - component: {fileID: 863225524}
   - component: {fileID: 863225523}
+  - component: {fileID: 863225529}
+  - component: {fileID: 863225528}
+  - component: {fileID: 863225527}
+  - component: {fileID: 863225526}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -2756,6 +2808,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863225521}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &863225526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863225521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2140963514
+      Data2: 1083799997
+      Data3: 453782664
+      Data4: 2005251817
+    Path: event:/Effects/InventoryGrab
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &863225527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863225521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40e7e0eae143e24f814fb674eb441dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &863225528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863225521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bbaae0ffe54114391c63e52b07b298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slot: {fileID: 492822724}
+  cardIndex: 2
+  raycastInteractor: {fileID: 2144965075}
+  playerCamera: {fileID: 442755312}
+  raycastDistance: 30
+  interactionText: {fileID: 541038388}
+--- !u!65 &863225529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863225521}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20, y: 10, z: 30}
+  m_Center: {x: -0, y: 4.6, z: -8}
 --- !u!1 &878081173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,8 +3437,10 @@ GameObject:
   - component: {fileID: 1020782819}
   - component: {fileID: 1020782818}
   - component: {fileID: 1020782817}
-  - component: {fileID: 1020782823}
-  - component: {fileID: 1020782820}
+  - component: {fileID: 1020782824}
+  - component: {fileID: 1020782825}
+  - component: {fileID: 1020782826}
+  - component: {fileID: 1020782827}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -3399,7 +3535,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020782815}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1020782820
+--- !u!114 &1020782824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020782815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40e7e0eae143e24f814fb674eb441dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1020782825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020782815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bbaae0ffe54114391c63e52b07b298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slot: {fileID: 167172029}
+  cardIndex: 1
+  raycastInteractor: {fileID: 2144965075}
+  playerCamera: {fileID: 442755312}
+  raycastDistance: 30
+  interactionText: {fileID: 541038388}
+--- !u!65 &1020782826
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020782815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25, y: 20.000002, z: 25}
+  m_Center: {x: 1, y: 7.1000047, z: 6.1777196}
+--- !u!114 &1020782827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3420,7 +3607,7 @@ MonoBehaviour:
       Data4: 2005251817
     Path: event:/Effects/InventoryGrab
   Event: 
-  EventPlayTrigger: 7
+  EventPlayTrigger: 0
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -3430,27 +3617,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!65 &1020782823
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020782815}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 15, y: -10, z: 20}
-  m_Center: {x: 0, y: 5, z: 5}
 --- !u!1 &1022380255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8259841504063060146, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
@@ -3493,11 +3659,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1874285155
-      Data2: 1156992078
-      Data3: -1994377537
-      Data4: 412786896
-    Path: "event:/Effects/Resolusi\xF3n"
+      Data1: 1983354316
+      Data2: 1286638560
+      Data3: 730455227
+      Data4: -172223522
+    Path: event:/Effects/Conection
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0
@@ -3551,11 +3717,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1874285155
-      Data2: 1156992078
-      Data3: -1994377537
-      Data4: 412786896
-    Path: "event:/Effects/Resolusi\xF3n"
+      Data1: 1983354316
+      Data2: 1286638560
+      Data3: 730455227
+      Data4: -172223522
+    Path: event:/Effects/Conection
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0
@@ -3835,8 +4001,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115112130}
-  - component: {fileID: 1115112132}
-  - component: {fileID: 1115112131}
   m_Layer: 0
   m_Name: Tajerta 2
   m_TagString: Untagged
@@ -3860,42 +4024,6 @@ Transform:
   - {fileID: 1020782816}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1115112131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115112129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02bbaae0ffe54114391c63e52b07b298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Slot: {fileID: 167172029}
-  cardIndex: 1
-  raycastInteractor: {fileID: 2144965075}
---- !u!65 &1115112132
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115112129}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.157139, y: 6.5183144, z: 10.228882}
-  m_Center: {x: 4.459177, y: 1.2225361, z: 1.1820374}
 --- !u!1 &1135887275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,6 +4907,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -491632408094770383, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
   m_PrefabInstance: {fileID: 1952922871}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1394631326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394631318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -433439599
+      Data2: 1254533549
+      Data3: -1768633454
+      Data4: -940877953
+    Path: event:/Effects/electric
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1394631327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394631318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f9780c1cefad4985fdc103a2414a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetosMonitoreados:
+  - {fileID: 1806899844}
+  - {fileID: 1040310037}
+  - {fileID: 1833778644}
+  - {fileID: 1022380255}
+  eventEmitter: {fileID: 1394631326}
 --- !u!1 &1415406506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,8 +6068,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1641589335}
-  - component: {fileID: 1641589334}
-  - component: {fileID: 1641589333}
   m_Layer: 0
   m_Name: Tajerta 3
   m_TagString: Untagged
@@ -5900,42 +6075,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1641589333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641589332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02bbaae0ffe54114391c63e52b07b298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Slot: {fileID: 492822724}
-  cardIndex: 2
-  raycastInteractor: {fileID: 2144965075}
---- !u!65 &1641589334
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641589332}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.157139, y: 6.5183144, z: 10.228882}
-  m_Center: {x: 4.459177, y: 1.2225361, z: 1.1820374}
 --- !u!4 &1641589335
 Transform:
   m_ObjectHideFlags: 0
@@ -6395,11 +6534,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1874285155
-      Data2: 1156992078
-      Data3: -1994377537
-      Data4: 412786896
-    Path: "event:/Effects/Resolusi\xF3n"
+      Data1: 1983354316
+      Data2: 1286638560
+      Data3: 730455227
+      Data4: -172223522
+    Path: event:/Effects/Conection
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0
@@ -6453,11 +6592,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1874285155
-      Data2: 1156992078
-      Data3: -1994377537
-      Data4: 412786896
-    Path: "event:/Effects/Resolusi\xF3n"
+      Data1: 1983354316
+      Data2: 1286638560
+      Data3: 730455227
+      Data4: -172223522
+    Path: event:/Effects/Conection
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0
@@ -7314,6 +7453,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 70571451235780696, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1394631322}
+    - targetCorrespondingSourceObject: {fileID: 70571451235780696, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1394631327}
+    - targetCorrespondingSourceObject: {fileID: 70571451235780696, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1394631326}
     - targetCorrespondingSourceObject: {fileID: 3896217741305258965, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 755968912}
@@ -8106,12 +8251,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2144155904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+  m_PrefabInstance: {fileID: 724362741662246740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2144965073 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4938865313720862182, guid: 976ea8172b41a474180502a280af7075, type: 3}
   m_PrefabInstance: {fileID: 724362741662246740}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2144155904}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 059cbe60d4216d7478c397ee9579a3d8, type: 3}
@@ -8122,12 +8272,43 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6630415666556599067, guid: 976ea8172b41a474180502a280af7075, type: 3}
   m_PrefabInstance: {fileID: 724362741662246740}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2144155904}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a18f0a68d4733474aa237643a4562562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2144965081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144155904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1224633005
+      Data2: 1284669019
+      Data3: -575625545
+      Data4: -1490485733
+    Path: event:/Effects/CambioFoto
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &724362741662246740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8349,6 +8530,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 442755312}
     - target: {fileID: 6630415666556599067, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      propertyPath: cardChangeEmitter
+      value: 
+      objectReference: {fileID: 2144965081}
+    - target: {fileID: 6630415666556599067, guid: 976ea8172b41a474180502a280af7075, type: 3}
       propertyPath: spawnableObjects.Array.size
       value: 7
       objectReference: {fileID: 0}
@@ -8472,7 +8657,10 @@ PrefabInstance:
     - {fileID: 4621324585473906240, guid: 976ea8172b41a474180502a280af7075, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2144965081}
   m_SourcePrefab: {fileID: 100100000, guid: 976ea8172b41a474180502a280af7075, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
