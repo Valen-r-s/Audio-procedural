@@ -470,6 +470,59 @@ Transform:
   - {fileID: 281862015}
   m_Father: {fileID: 956652961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &209177757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209177758}
+  - component: {fileID: 209177759}
+  m_Layer: 0
+  m_Name: RainCollisioner2
+  m_TagString: Lluvia
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209177758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209177757}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24952805, z: -0, w: 0.96836764}
+  m_LocalPosition: {x: -3.725, y: 36.55, z: -95.85}
+  m_LocalScale: {x: 0.46890262, y: 0.450075, z: 0.30006808}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658466784}
+  m_LocalEulerAnglesHint: {x: 0, y: -28.899, z: 0}
+--- !u!65 &209177759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209177757}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 46, y: 35.5, z: 80}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &221267350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,6 +3278,59 @@ Transform:
   - {fileID: 819359960}
   m_Father: {fileID: 805629098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &998708967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998708968}
+  - component: {fileID: 998708969}
+  m_Layer: 0
+  m_Name: RainCollisioner3
+  m_TagString: Lluvia
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &998708968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998708967}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.75, y: 42.275, z: -104.75}
+  m_LocalScale: {x: 0.40159166, y: 0.18846229, z: 0.09381929}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658466784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &998708969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998708967}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 46, y: 35.5, z: 80}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &999115515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6137,6 +6243,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1114927638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1658466784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+  m_PrefabInstance: {fileID: 1952922871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1668046151 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7697656965146152679, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
@@ -7326,6 +7437,15 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 2981955941735545528, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2067180971}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 209177758}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 998708968}
     - targetCorrespondingSourceObject: {fileID: 2251771578500756282, guid: 2c006db8511274f498510b4e49ad0212, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1106722238}
@@ -7697,6 +7817,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020042155}
   m_CullTransparentMesh: 1
+--- !u!1 &2067180969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067180971}
+  - component: {fileID: 2067180970}
+  m_Layer: 0
+  m_Name: RainCollisioner1
+  m_TagString: Lluvia
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2067180970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067180969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 46, y: 35.5, z: 80}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &2067180971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067180969}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.225, y: 18.775, z: -6.7}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658466784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2077362801
 GameObject:
   m_ObjectHideFlags: 0
@@ -8309,6 +8482,50 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &2144965083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144155904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -117282858
+      Data2: 1122372444
+      Data3: -317885773
+      Data4: 1239005308
+    Path: event:/Ambiente/Lluvia
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2144965084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144155904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa440653c13016448013bc04b814a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rainEmitter: {fileID: 2144965083}
 --- !u!1001 &724362741662246740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8661,6 +8878,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2144965081}
+    - targetCorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2144965084}
+    - targetCorrespondingSourceObject: {fileID: 1266244378608711215, guid: 976ea8172b41a474180502a280af7075, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2144965083}
   m_SourcePrefab: {fileID: 100100000, guid: 976ea8172b41a474180502a280af7075, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

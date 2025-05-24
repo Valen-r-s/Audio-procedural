@@ -148,10 +148,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638836029028072302
+  lastModified: 638836742347179207
   FileSizes:
   - Name: Desktop
-    Value: 10336640
+    Value: 10336768
   Exists: 1
 --- !u!114 &-5097195371283361391
 MonoBehaviour:
@@ -430,7 +430,7 @@ MonoBehaviour:
   - {fileID: 2821445839706973871}
   StringsBanks:
   - {fileID: 7162602974493901334}
-  cacheTime: 638836029028072302
+  cacheTime: 638836742347179207
   cacheVersion: 131846
 --- !u!114 &121470061182374311
 MonoBehaviour:
@@ -532,7 +532,7 @@ MonoBehaviour:
   - {fileID: -6014691917478260980}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -4310474352302787868}
   MinDistance: 1
