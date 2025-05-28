@@ -4,6 +4,9 @@ public class DoorActivator : MonoBehaviour
 {
     public Animator doorAnimator; // El Animator de la puerta
     public string boolParameterName = "DoorState"; // Nombre de la variable booleana en el Animator
+    public bool Rain;
+    public float TimeFadeRain;
+    public FMODRainZoneTrigger RainZone;
     private void Start()
     {
         if (doorAnimator != null)
@@ -15,6 +18,13 @@ public class DoorActivator : MonoBehaviour
         {
             Debug.LogWarning("¡No se ha asignado ningún Animator de puerta!");
         }
+
+
+        if (Rain)
+        {
+            RainZone.FadeOutAndStopRain(TimeFadeRain);
+        }
+
     }
     private void OnTriggerEnter(Collider other)
     {

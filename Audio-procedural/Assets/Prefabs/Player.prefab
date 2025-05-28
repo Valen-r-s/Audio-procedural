@@ -113,6 +113,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6387671783981294872}
+  - {fileID: 83496691959798775}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5163346502186982748
@@ -235,6 +236,7 @@ MonoBehaviour:
   interactableObjects: []
   spawnableObjects: []
   requiredCardIndex: 
+  cardChangeEmitter: {fileID: 0}
   CardCont: {fileID: 176948472333251305}
 --- !u!114 &4938865313720862182
 MonoBehaviour:
@@ -248,17 +250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059cbe60d4216d7478c397ee9579a3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footstepEvent:
-    Guid:
-      Data1: 1344192464
-      Data2: 1209703472
-      Data3: 1015164074
-      Data4: 1587171328
-    Path: event:/Effects/Pasos
-  rayLength: 1.5
+  footstepEmitterObject: {fileID: 6575952563928085084}
+  rayLength: 10
   materialLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   reverbTransitionTime: 0.2
 --- !u!1 &2476753170991210188
 GameObject:
@@ -398,6 +394,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &6575952563928085084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83496691959798775}
+  - component: {fileID: 1567383681230006002}
+  m_Layer: 0
+  m_Name: Pasos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83496691959798775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575952563928085084}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5765418867092637818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567383681230006002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575952563928085084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1344192464
+      Data2: 1209703472
+      Data3: 1015164074
+      Data4: 1587171328
+    Path: event:/Effects/pasos
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: Pasos
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6886776128637605211
 GameObject:
   m_ObjectHideFlags: 0

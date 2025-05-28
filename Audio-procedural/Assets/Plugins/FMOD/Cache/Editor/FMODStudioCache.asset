@@ -148,10 +148,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638836742347179207
+  lastModified: 638840378907334277
   FileSizes:
   - Name: Desktop
-    Value: 10336768
+    Value: 10337216
   Exists: 1
 --- !u!114 &-5097195371283361391
 MonoBehaviour:
@@ -422,43 +422,16 @@ MonoBehaviour:
   - {fileID: -2631031366930027011}
   - {fileID: -6300875712111022900}
   - {fileID: -5097195371283361391}
-  - {fileID: 121470061182374311}
-  - {fileID: 1264734324145149508}
+  - {fileID: 1209091256569767109}
+  - {fileID: 6634243843274510871}
   EditorParameters:
   - {fileID: -265005336043751301}
   MasterBanks:
   - {fileID: 2821445839706973871}
   StringsBanks:
   - {fileID: 7162602974493901334}
-  cacheTime: 638836742347179207
+  cacheTime: 638840378907334277
   cacheVersion: 131846
---- !u!114 &121470061182374311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/Conection
-  m_EditorClassIdentifier: 
-  Path: event:/Effects/Conection
-  Guid:
-    Data1: 1983354316
-    Data2: 1286638560
-    Data3: 730455227
-    Data4: -172223522
-  Banks:
-  - {fileID: -6014691917478260980}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
 --- !u!114 &177103268343015971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +456,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &1264734324145149508
+--- !u!114 &1209091256569767109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -553,10 +526,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638836011222752614
+  lastModified: 638840326821396182
   FileSizes:
   - Name: Desktop
-    Value: 142944
+    Value: 143104
   Exists: 1
 --- !u!114 &3373602895899778246
 MonoBehaviour:
@@ -687,6 +660,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2140
+--- !u!114 &6634243843274510871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Conection
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Conection
+  Guid:
+    Data1: 1983354316
+    Data2: 1286638560
+    Data3: 730455227
+    Data4: -172223522
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &6956537735639008371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638836011222764112
+  lastModified: 638840326821436190
   FileSizes:
   - Name: Desktop
     Value: 2180
