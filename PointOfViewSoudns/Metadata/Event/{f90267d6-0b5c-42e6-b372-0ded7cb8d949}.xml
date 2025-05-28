@@ -82,9 +82,6 @@
 		<relationship name="modules">
 			<destination>{99e577b3-48bd-4236-a2b4-84a70e3f6b64}</destination>
 		</relationship>
-		<relationship name="markers">
-			<destination>{34949b6d-d5ed-443a-a5c3-1f1184b8fe1a}</destination>
-		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{a533b104-8c25-40cc-bbba-b1f7bbc7106a}">
 		<relationship name="preset">
@@ -153,7 +150,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{e66dd08e-50b0-431a-a3c9-ad39ce198509}">
 		<property name="volume">
-			<value>-4</value>
+			<value>-6.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -168,23 +165,8 @@
 			<destination>{63c6ae67-18be-4ef0-8d7b-6aa387e8ab82}</destination>
 		</relationship>
 	</object>
-	<object class="LoopRegion" id="{34949b6d-d5ed-443a-a5c3-1f1184b8fe1a}">
-		<property name="position">
-			<value>2</value>
-		</property>
-		<property name="length">
-			<value>86</value>
-		</property>
-		<relationship name="timeline">
-			<destination>{b356761f-48f0-4e76-bc5f-417920b53bca}</destination>
-		</relationship>
-		<relationship name="markerTrack">
-			<destination>{8c85ff5b-ec02-4f50-92a8-aeba1d57c566}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{f4d9a860-eed8-46e7-8270-00befcd37c35}">
 		<relationship name="effects">
-			<destination>{13b9620e-32d9-4206-a312-6343f55190e7}</destination>
 			<destination>{a7496f7c-c52e-46b4-a654-327270e2df41}</destination>
 			<destination>{2663cd17-8e9f-4e4f-9a75-d1e81315a819}</destination>
 			<destination>{cc1c8a2b-d6d4-40a7-ba06-c0ada8882e60}</destination>
@@ -198,11 +180,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2cf85597-7124-45f8-bf8d-4755da253497}" />
-	<object class="CompressorEffect" id="{13b9620e-32d9-4206-a312-6343f55190e7}">
-		<property name="threshold">
-			<value>-37</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{a7496f7c-c52e-46b4-a654-327270e2df41}" />
 	<object class="ThreeEQEffect" id="{2663cd17-8e9f-4e4f-9a75-d1e81315a819}">
 		<relationship name="automators">
