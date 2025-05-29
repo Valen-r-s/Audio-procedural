@@ -6,7 +6,7 @@ public class PauseMenu : MonoBehaviour
 
     public MonoBehaviour playerCameraController;
 
-    public static bool isPaused { get; private set; } = false;
+    public static bool isPaused  = false;
     public static bool CanPaused = false;
 
 

@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 5626588978235451006}
   - component: {fileID: 6630415666556599067}
   - component: {fileID: 4938865313720862182}
+  - component: {fileID: 1311679945292929858}
+  - component: {fileID: 5432013380145375485}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -236,7 +238,7 @@ MonoBehaviour:
   interactableObjects: []
   spawnableObjects: []
   requiredCardIndex: 
-  cardChangeEmitter: {fileID: 0}
+  cardChangeEmitter: {fileID: 1311679945292929858}
   CardCont: {fileID: 176948472333251305}
 --- !u!114 &4938865313720862182
 MonoBehaviour:
@@ -256,6 +258,70 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   reverbTransitionTime: 0.2
+  fallImpactEmitter: {fileID: 5432013380145375485}
+  fallThreshold: 0.4
+--- !u!114 &1311679945292929858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266244378608711215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1224633005
+      Data2: 1284669019
+      Data3: -575625545
+      Data4: -1490485733
+    Path: event:/Effects/CambioFoto
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5432013380145375485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266244378608711215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -189844061
+      Data2: 1269577676
+      Data3: -2101835890
+      Data4: -1394192476
+    Path: event:/Effects/caida
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2476753170991210188
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +538,7 @@ GameObject:
   - component: {fileID: 6163960310621833605}
   - component: {fileID: 8386524954881769259}
   - component: {fileID: 1387268153797557677}
+  - component: {fileID: 3834882300939375703}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -607,6 +674,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &3834882300939375703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886776128637605211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Parameter 1
+  TriggerEvent: 11
+  Value: 1
 --- !u!1 &8668983243122426628
 GameObject:
   m_ObjectHideFlags: 0

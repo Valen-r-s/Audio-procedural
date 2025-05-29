@@ -42,7 +42,7 @@ public class RaycastInteractor : MonoBehaviour
         rayTimer -= Time.deltaTime;
 
         // No cambiar tarjeta si está apuntando o cambiando
-        if (!isChangingCard)
+        if (!isChangingCard && hasCardEquipped)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1)) EquipCard(0);
             if (Input.GetKeyDown(KeyCode.Alpha2)) EquipCard(1);
@@ -166,3 +166,4 @@ public class RaycastInteractor : MonoBehaviour
         }
     }
 }
+

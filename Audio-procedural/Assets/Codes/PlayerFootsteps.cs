@@ -6,10 +6,12 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class FootstepSound : MonoBehaviour
 {
+
+
     [Header("FMOD")]
     public GameObject footstepEmitterObject; // Objeto hijo que tiene el StudioEventEmitter
     private StudioEventEmitter emitter; // El componente que reproduce los pasos
-
+    private float tiempo;
     private CharacterController characterController;
     private bool isGrounded;
 
@@ -22,6 +24,15 @@ public class FootstepSound : MonoBehaviour
     private float currentReverb = 0f;
     private float targetReverb = 0f;
     private float transitionTimer = 0f;
+
+
+    [Header("Sonido de caída")]
+    public StudioEventEmitter fallImpactEmitter; // Asignar en Inspector
+    public float fallThreshold = 0.4f; // Tiempo en el aire antes de que cuente como caída fuerte
+
+    private float fallTimer = 0f;
+    private bool wasGrounded = true;
+
 
     void Start()
     {
@@ -74,6 +85,29 @@ public class FootstepSound : MonoBehaviour
         {
             transitionTimer = 0f;
         }
+
+
+        // Monitorea el estado real de grounded del CharacterController
+        bool ahoraGrounded = characterController.isGrounded;
+
+        if (!ahoraGrounded)
+        {
+            fallTimer += Time.deltaTime;
+        }
+        else
+        {
+            if (!wasGrounded && fallTimer > fallThreshold)
+            {
+                if (fallImpactEmitter != null)
+                {
+                    fallImpactEmitter.Play();
+                    Debug.Log("💥 Sonido de caída reproducido.");
+                }
+            }
+            fallTimer = 0f; // Reiniciar el contador al tocar el suelo
+        }
+
+        wasGrounded = ahoraGrounded;
     }
 
 
@@ -88,7 +122,7 @@ public class FootstepSound : MonoBehaviour
         transitionTimer = 0f;
     }
 
-    
+
     void DetectSurface()
     {
 

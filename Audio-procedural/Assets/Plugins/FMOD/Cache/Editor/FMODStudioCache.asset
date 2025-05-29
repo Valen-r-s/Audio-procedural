@@ -106,6 +106,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7260577268077579086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Effects/Luces apag\xF3n"
+  m_EditorClassIdentifier: 
+  Path: "event:/Effects/Luces apag\xF3n"
+  Guid:
+    Data1: 705770090
+    Data2: 1203142378
+    Data3: 2110941627
+    Data4: -1086777331
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5608
 --- !u!114 &-6300875712111022900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,9 +143,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/CambioFoto
+  m_Name: event:/Effects/cambioFoto
   m_EditorClassIdentifier: 
-  Path: event:/Effects/CambioFoto
+  Path: event:/Effects/cambioFoto
   Guid:
     Data1: -1224633005
     Data2: 1284669019
@@ -129,10 +156,35 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -2735871983085545917}
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &-6269651960289157117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pared corazon
+  m_EditorClassIdentifier: 
+  Name: pared corazon
+  StudioPath: parameter:/pared corazon
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2284792796
+    data2: 1241624892
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-6014691917478260980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,11 +200,38 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638840378907334277
+  lastModified: 638840823408834888
   FileSizes:
   - Name: Desktop
-    Value: 10337216
+    Value: 15617728
   Exists: 1
+--- !u!114 &-5266152141932805421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/emergencia
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/emergencia
+  Guid:
+    Data1: 741295077
+    Data2: 1085546028
+    Data3: 1515627190
+    Data4: -2033777524
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5690
 --- !u!114 &-5097195371283361391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +255,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -985512670813585132}
   MinDistance: 1
   MaxDistance: 20
   Length: 440
@@ -229,6 +309,30 @@ MonoBehaviour:
   ID:
     data1: 1228481350
     data2: 4065791123
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2735871983085545917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cambioFoto/pitch
+  m_EditorClassIdentifier: 
+  Name: pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2642720066
+    data2: 519294312
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -314,7 +418,86 @@ MonoBehaviour:
   - {fileID: 5052763962316512819}
   MinDistance: 1
   MaxDistance: 20
-  Length: 160591
+  Length: 504954
+--- !u!114 &-985512670813585132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InventoryGrab/pitch
+  m_EditorClassIdentifier: 
+  Name: pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2642720066
+    data2: 519294312
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-911846890832663508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/corazon
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/corazon
+  Guid:
+    Data1: 1133446883
+    Data2: 1120856678
+    Data3: 2144527031
+    Data4: -1935489497
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8680911344897110150}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 63973
+--- !u!114 &-892000831448952180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/caida
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/caida
+  Guid:
+    Data1: -189844061
+    Data2: 1269577676
+    Data3: -2101835890
+    Data4: -1394192476
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 191
 --- !u!114 &-265005336043751301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,13 +607,20 @@ MonoBehaviour:
   - {fileID: -5097195371283361391}
   - {fileID: 1209091256569767109}
   - {fileID: 6634243843274510871}
+  - {fileID: 1108569254874847265}
+  - {fileID: -7260577268077579086}
+  - {fileID: -892000831448952180}
+  - {fileID: -911846890832663508}
+  - {fileID: -5266152141932805421}
   EditorParameters:
   - {fileID: -265005336043751301}
+  - {fileID: 6592243161078915483}
+  - {fileID: -6269651960289157117}
   MasterBanks:
   - {fileID: 2821445839706973871}
   StringsBanks:
   - {fileID: 7162602974493901334}
-  cacheTime: 638840378907334277
+  cacheTime: 638840823408834888
   cacheVersion: 131846
 --- !u!114 &177103268343015971
 MonoBehaviour:
@@ -456,6 +646,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1108569254874847265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/click
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/click
+  Guid:
+    Data1: -1067512048
+    Data2: 1229324782
+    Data3: -1372895048
+    Data4: -2113948954
+  Banks:
+  - {fileID: -6014691917478260980}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 125
 --- !u!114 &1209091256569767109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +699,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5000
+  Length: 7750
 --- !u!114 &1579499631954667969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,10 +743,10 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638840326821396182
+  lastModified: 638840801405328202
   FileSizes:
   - Name: Desktop
-    Value: 143104
+    Value: 143392
   Exists: 1
 --- !u!114 &3373602895899778246
 MonoBehaviour:
@@ -603,7 +820,7 @@ MonoBehaviour:
     data1: 1722628346
     data2: 963810869
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &5568684905410944829
@@ -660,6 +877,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2140
+--- !u!114 &6592243161078915483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: parameter:/parameter 1
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1722628346
+    data2: 963810869
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &6634243843274510871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,9 +911,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Effects/Conection
+  m_Name: event:/Effects/conection
   m_EditorClassIdentifier: 
-  Path: event:/Effects/Conection
+  Path: event:/Effects/conection
   Guid:
     Data1: 1983354316
     Data2: 1286638560
@@ -731,10 +972,34 @@ MonoBehaviour:
   Path: ../PointOfViewSoudns/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638840326821436190
+  lastModified: 638840801405368188
   FileSizes:
   - Name: Desktop
-    Value: 2180
+    Value: 2458
+  Exists: 1
+--- !u!114 &8680911344897110150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/corazon/pared corazon
+  m_EditorClassIdentifier: 
+  Name: pared corazon
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2284792796
+    data2: 1241624892
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &8743154912871749109
 MonoBehaviour:

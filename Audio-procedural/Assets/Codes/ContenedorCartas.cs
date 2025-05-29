@@ -10,7 +10,7 @@ public class ContenedorCartas : MonoBehaviour
     public void ActualizarCartaVisual()
     {
         int index = raycastRef.GetEquippedCardIndex();
-        
+
         for (int i = 0; i < cartas.Count; i++)
         {
             cartas[i].SetActive(i == index);
@@ -35,4 +35,3 @@ public class ContenedorCartas : MonoBehaviour
 
 
 }
-

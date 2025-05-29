@@ -154,6 +154,9 @@
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{1b0be1ea-7a4a-4067-af9e-019d33874961}">
+		<property name="volume">
+			<value>-13.5</value>
+		</property>
 		<property name="name">
 			<value>Open</value>
 		</property>
@@ -321,6 +324,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{fabaec55-1671-4d9e-8dd7-5dad2526ce35}">
 		<relationship name="effects">
+			<destination>{f55022b4-e51a-4e73-bc01-bad5091af5a7}</destination>
 			<destination>{f00542a1-960e-4dcb-9af1-5b94ec447791}</destination>
 		</relationship>
 	</object>
@@ -372,6 +376,11 @@
 		<relationship name="parameter">
 			<destination>{1bce9a71-5075-4d7a-b085-b33ecf5b2db6}</destination>
 		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{f55022b4-e51a-4e73-bc01-bad5091af5a7}">
+		<property name="threshold">
+			<value>-18.5</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{f00542a1-960e-4dcb-9af1-5b94ec447791}" />
 	<object class="MixerBusFader" id="{ec083259-8779-4575-b011-dbcf7f1ea077}" />

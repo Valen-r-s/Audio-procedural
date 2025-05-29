@@ -10,6 +10,10 @@ public class PlayEmitterWhenAllActive : MonoBehaviour
     [Header("Event Emitter en este objeto")]
     public StudioEventEmitter eventEmitter;
 
+    [Header("Luz a modificar")]
+    public Light targetLight;
+    public float nuevaIntensidad = 3f;
+
     private bool sonidoYaReproducido = false;
 
     void Update()
@@ -19,13 +23,20 @@ public class PlayEmitterWhenAllActive : MonoBehaviour
             if (eventEmitter != null)
             {
                 eventEmitter.Play();
-                sonidoYaReproducido = true;
                 Debug.Log("✅ Todos los objetos activos. Sonido reproducido.");
             }
             else
             {
                 Debug.LogWarning("⚠️ No hay StudioEventEmitter asignado.");
             }
+
+            if (targetLight != null)
+            {
+                targetLight.intensity = nuevaIntensidad;
+                Debug.Log("💡 Intensidad de luz modificada.");
+            }
+
+            sonidoYaReproducido = true;
         }
     }
 

@@ -15,4 +15,11 @@ public class SceneChanger : MonoBehaviour
             Debug.LogError("Invalid scene index: " + sceneIndex);
         }
     }
+
+    public void ResetScence()
+    {
+        PauseMenu.isPaused = false;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+    }
 }
